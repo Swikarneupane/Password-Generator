@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Password Generator | Swikar Neupane</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Generate Password</h2>
+        <div class="el">
+            <input type="text" id="password" class="inp" placeholder="Password" />
+            <button onclick="copyText()" title="Copy">
+                <i class="fa fa-copy"></i>
+            </button>
+            <button onclick="generatePassword()" title="Generate">
+                <i class="fa fa-refresh fa-spin"></i>
+            </button>
+        </div>
+    </div>
+    <div class="info">Copied to clipboard!</div>
+    <script src="script.js"></script>
+</body>
+</html>
