@@ -1,19 +1,53 @@
-const info = document.querySelector(".info");
-const passfield = document.querySelector("#password");
 let password = "";
+let result = window.prompt("Enter the number of characters", 8);
+const pass1 = document.getElementById('pass1');
+const pass2 = document.getElementById('pass2');
+const pass3 = document.getElementById('pass3');
+const pass4 = document.getElementById('pass4');
+
 function generatePassword() {
+    firstPass();
+    secondPass();
+    thirdPass();
+    fourthPass();
+}
+function firstPass() {
     password = "";
-    let length = 8;
+    let length = result;
     let chars = `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()`;
     let n = chars.length;
-    for(var i = 0; i < length; i++) {
+    for ( let i = 0 ; i<length; i++) {
         password += chars.charAt(Math.floor(Math.random() * n));
     }
-    passfield.value = password;
+    pass1.textContent = password;
 }
-
-function copyText() {
-    navigator.clipboard.writeText(password);
-    info.style.opacity = "1";
-    setTimeout(function(){info.style.opacity = "0"}, 1500);
+function secondPass() {
+    password = "";
+    let length = result;
+    let chars = `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()`;
+    let n = chars.length;
+    for ( let i = 0 ; i<length; i++) {
+        password += chars.charAt(Math.floor(Math.random() * n));
+    }
+    pass2.textContent = password;
+}
+function thirdPass() {
+    password = "";
+    let length = result;
+    let chars = `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()`;
+    let n = chars.length;
+    for ( let i = 0 ; i<length; i++) {
+        password += chars.charAt(Math.floor(Math.random() * n));
+    }
+    pass3.textContent = password;
+}
+function fourthPass() {
+    password = "";
+    let length = result;
+    let chars = `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()`;
+    let n = chars.length;
+    for ( let i = 0 ; i<length; i++) {
+        password += chars.charAt(Math.floor(Math.random() * n));
+    }
+    pass4.textContent = password;
 }
