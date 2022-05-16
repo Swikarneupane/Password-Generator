@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Password Generator | Swikar Neupane</title>
+    <link rel="stylesheet" href="style.css">nk
+    <title>Password Generator</title>
 </head>
 <body>
-    <div class="container">
-        <h2>Generate Password</h2>
-        <div class="el">
-            <input type="text" id="password" class="inp" placeholder="Password" />
-            <button onclick="copyText()" title="Copy">
-                <i class="fa fa-copy"></i>
-            </button>
-            <button onclick="generatePassword()" title="Generate">
-                <i class="fa fa-refresh fa-spin"></i>
-            </button>
-        </div>
-    </div>
-    <div class="info">Copied to clipboard!</div>
+    <main>
+        <h3 id="generate">Generate a</h3>
+        <h3 id="randomPass">random password</h3>
+        <p>Never use an insecure password again.</p>
+        <button onclick="generatePassword()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M240.5 224H352C365.3 224 377.3 232.3 381.1 244.7C386.6 257.2 383.1 271.3 373.1 280.1L117.1 504.1C105.8 513.9 89.27 514.7 77.19 505.9C65.1 497.1 60.7 481.1 66.59 467.4L143.5 288H31.1C18.67 288 6.733 279.7 2.044 267.3C-2.645 254.8 .8944 240.7 10.93 231.9L266.9 7.918C278.2-1.92 294.7-2.669 306.8 6.114C318.9 14.9 323.3 30.87 317.4 44.61L240.5 224z"/></svg>
+            Generate Password
+        </button>
+            <div id="passwords">
+                <div id="firstTwo">
+                    <p id="pass1"></p>
+                    <p id="pass2"></p>
+                </div>
+                <div id="secondTwo">
+                    <p id="pass3"></p>
+                    <p id="pass4"></p>
+                </div>
+            </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
