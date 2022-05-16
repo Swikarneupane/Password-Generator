@@ -1,59 +1,94 @@
-body{
-    background: linear-gradient(to bottom right, rgb(75,16,212), rgb(16,35,212));
-    font-family: 'Josefin Sans', sans-serif;
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}    
-.container{
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    padding: 40px;
-    background: #fff;
-    border-radius: 20px;
-    border: 1px solid rgb(26,1,247);
-    box-shadow: 0 20px 20px rgba(0,0,0,0.3);
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap');
+
+:root{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
 }
-.el{
-    display: flex;
-}
-h2{
+html,body{
+    margin: auto;
     text-align: center;
-    margin-bottom: 20px;
+    font-family: "Karla";
+    background-color: black;
+    color: white;
 }
-.inp{
-    padding: 8px;
-    color: #000;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 800;
-    text-align: center;
-    border: 2px solid rgb(43,43,58);
-    border-radius: 4px;
+h3{
+    font-size: 4rem;
 }
-.inp:focus{
-    outline: none;
+#randomPass{
+    color: #4ADF86;
+    margin-top: -3.4rem;
+}
+main{
+    width: 60%;
+    background-color: #1F2937;
+    text-align: left;
+    padding: 3rem;
+    margin: auto;
+    height: 40rem;
+}
+p{
+    font-size: 1.4rem;
+    color: medium grey;
+    margin-top: -3rem;
 }
 button{
-    width: 40px;
-    margin-left: 8px;
-    border: 2px solid rgb(43,43,58);
-    border-radius: 4px;
-    transition: 0.2s;
+    height: 4rem;
+    width: 20rem;
+    background-color: #10B981;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 3rem;
+    font-family: 'Karla';
+    cursor: pointer;
 }
 button:hover{
-    background: #000;
-    color: #fff;
+    background-color: beige;
+    color: black;
 }
-.info{
-    margin-top: 40px;
-    background: lawngreen;
-    width: 200px;
-    padding: 12px;
-    opacity: 0;
+svg{
+    background-color: none;
+    color: white;
+    height: 1.4rem;
+    margin-left: 0rem;
+    margin-right: 1.3rem;
+}
+#passwords{
+    height: 5rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+#firstTwo > p, #secondTwo > p{
+    height: 2.5rem;
+    width: 25rem;
+    padding: 2rem;
+    background-color: #000307;
+    border: none;
+    border-radius: 10px;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
-    transition: 0.15s;
-    animation: slideIn 1.5s linear forwards;
+    font-size: 1.7rem;
+    border: none;
+}
+#firstTwo{
+    display: flex;
+}
+#secondTwo{
+    display: flex;
+    margin-top: 2rem;
+}
+#firstTwo > p:hover, #secondTwo > p:hover{
+    background-color: beige;
+    color: #000307;
+}
+@media screen and (min-width: 800px) {
+    main{
+        max-width: 800px;
+    }
 }
